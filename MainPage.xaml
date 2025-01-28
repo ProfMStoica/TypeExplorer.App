@@ -10,7 +10,7 @@
 			<Label Text="Sample Value:"
 			       FontSize="17"
 			       VerticalOptions="Center"/>
-			<Entry x:Name="_txtTypeName"
+			<Entry x:Name="_txtSampleValue"
 				   Placeholder="Select a type below..." 
 			       IsReadOnly="True"
 			       FontSize="17"/>
