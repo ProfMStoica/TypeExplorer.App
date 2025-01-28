@@ -2,14 +2,47 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TypeExplorer.MainPage">
-			 
-    <ScrollView>
-        <VerticalStackLayout 
-            Spacing="25" 
-            Padding="30,0" 
-            VerticalOptions="Center">
-
-        </VerticalStackLayout>
-    </ScrollView>
- 
+	<VerticalStackLayout Margin="20">
+		<HorizontalStackLayout 
+			VerticalOptions="Center"
+			Margin="0, 20"
+			Spacing="10">
+			<Label Text="Sample Value:"
+			       FontSize="17"
+			       VerticalOptions="Center"/>
+			<Entry x:Name="_txtTypeName"
+				   Placeholder="Select a type below..." 
+			       IsReadOnly="True"
+			       FontSize="17"/>
+			<Label Text="Size:"
+			       VerticalOptions="Center"
+			       Margin="20, 0, 0, 0"
+			       FontSize="17"/>
+			<Entry x:Name="_txtSize" 
+			       Placeholder="?" 
+			       IsReadOnly="True"
+			       FontSize="17"/>
+			<Label Text="byte(s)"
+			       VerticalOptions="Center"
+			       FontSize="17"/>
+			<Button Text="Clear"
+			        FontSize="17"
+			        Margin="20, 0, 0, 0"
+			        HorizontalOptions="End"/>
+		</HorizontalStackLayout>
+		<ListView>
+			<ListView.ItemsSource>
+				<x:Array Type="{x:Type x:String}">
+					<x:String>int</x:String>
+					<x:String>long</x:String>
+					<x:String>float</x:String>
+					<x:String>double</x:String>
+					<x:String>decimal</x:String>
+					<x:String>string</x:String>
+					<x:String>bool</x:String>
+					<x:String>char</x:String>
+				</x:Array>
+			</ListView.ItemsSource>
+		</ListView>
+	</VerticalStackLayout>
 </ContentPage>
