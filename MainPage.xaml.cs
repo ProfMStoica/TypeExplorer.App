@@ -35,6 +35,8 @@ public partial class MainPage : ContentPage
 
     private void OnClearTypeInfo(object sender, EventArgs e)
     {
-        
+        _txtSampleValue.Text = "";
+        _txtSize.Text = "";
+        _lstTypes.SelectedItem = null;
     }
 }
