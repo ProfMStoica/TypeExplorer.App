@@ -31,7 +31,8 @@
 			        HorizontalOptions="End"
 			        Clicked="OnClearTypeInfo"/>
 		</HorizontalStackLayout>
-		<ListView ItemSelected="OnTypeSelected">
+		<ListView x:Name="_lstTypes" 
+		          ItemSelected="OnTypeSelected">
 			<ListView.ItemsSource>
 				<x:Array Type="{x:Type x:String}">
 					<x:String>int</x:String>
