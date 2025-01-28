@@ -6,4 +6,14 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
     }
+
+    private void OnTypeSelected(object sender, SelectedItemChangedEventArgs e)
+    {
+        
+    }
+
+    private void OnClearTypeInfo(object sender, EventArgs e)
+    {
+        
+    }
 }

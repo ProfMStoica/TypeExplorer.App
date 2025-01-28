@@ -28,9 +28,10 @@
 			<Button Text="Clear"
 			        FontSize="17"
 			        Margin="20, 0, 0, 0"
-			        HorizontalOptions="End"/>
+			        HorizontalOptions="End"
+			        Clicked="OnClearTypeInfo"/>
 		</HorizontalStackLayout>
-		<ListView>
+		<ListView ItemSelected="OnTypeSelected">
 			<ListView.ItemsSource>
 				<x:Array Type="{x:Type x:String}">
 					<x:String>int</x:String>
